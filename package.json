@@ -1,0 +1,25 @@
+{
+  "name": "the_abode_of_freedom",
+  "version": "0.0.0",
+  "description": "A mighty fortress.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "sungwun"
+  },
+  "author": "SoftFeta",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@angular2-material/core": "^2.0.0-alpha.4",
+    "angular2": "^2.0.0-beta.17",
+    "bower": "^1.7.9",
+    "express": "^4.13.4",
+    "js-yaml": "^3.6.1",
+    "pug": "^2.0.0-alpha8",
+    "tether": "^1.3.2",
+    "toastr": "^2.1.2"
+  }
+}
