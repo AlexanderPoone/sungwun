@@ -10,5 +10,5 @@
 >>> voices = e.getProperty('voices')
 >>> e.setProperty('voice', voices[0].id)
 >>> lemma="Tagus"
->>> system("cls");phrase=wn.synsets(lemma)[0].definition();print(colorama.Fore.GREEN+colorama.Style.BRIGHT+phrase+colorama.Style.RESET_ALL);engine.say(phrase);engine.runAndWait()
+>>> begone=system("cls");phrase=wn.synsets(lemma)[0].definition();print(colorama.Fore.GREEN+colorama.Style.BRIGHT+phrase+colorama.Style.RESET_ALL);engine.say(phrase);engine.runAndWait()
 ```
