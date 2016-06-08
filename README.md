@@ -8,7 +8,10 @@
 >>> colorama.init()
 >>> e=pyttsx.init()
 >>> voices = e.getProperty('voices')
->>> e.setProperty('voice', voices[0].id)
+>>> for voice in voices:
+>>>    if voice.id.endswith("ZIRA_11.0"):
+>>>       e.setProperty('voice', voice.id)
+>>>       break
 >>> lemma="Tagus"
->>> begone=system("cls");phrase=wn.synsets(lemma)[0].definition();print(colorama.Fore.GREEN+colorama.Style.BRIGHT+phrase+colorama.Style.RESET_ALL);engine.say(phrase);engine.runAndWait()
+>>> begone=system("cls");phrase=wn.synsets(lemma)[0].definition();print(colorama.Fore.GREEN+colorama.Style.BRIGHT+phrase+colorama.Style.RESET_ALL);e.say(phrase);e.runAndWait()
 ```
