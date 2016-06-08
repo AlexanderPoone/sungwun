@@ -12,6 +12,6 @@
 >>>    if voice.id.endswith("ZIRA_11.0"):
 >>>       e.setProperty('voice', voice.id)
 >>>       break
->>> lemma="Tagus"
+>>> lemma="vandal1"
 >>> begone=system("cls");entry=0;entry=int(lemma[-1:]) if lemma[-1:].isdigit() else entry;lemma=lemma[:-1] if lemma[-1:].isdigit() else lemma;phrase=wn.synsets(lemma)[entry].definition();print(colorama.Fore.GREEN+colorama.Style.BRIGHT+phrase+colorama.Style.RESET_ALL);e.say(phrase);e.runAndWait()
 ```
