@@ -13,5 +13,5 @@
 >>>       e.setProperty('voice', voice.id)
 >>>       break
 >>> lemma="Tagus"
->>> begone=system("cls");phrase=wn.synsets(lemma)[0].definition();print(colorama.Fore.GREEN+colorama.Style.BRIGHT+phrase+colorama.Style.RESET_ALL);e.say(phrase);e.runAndWait()
+>>> begone=system("cls");entry=0;entry=int(lemma[-1:]) if lemma[-1:].isdigit() else entry;lemma=lemma[:-1] if lemma[-1:].isdigit() else lemma;phrase=wn.synsets(lemma)[entry].definition();print(colorama.Fore.GREEN+colorama.Style.BRIGHT+phrase+colorama.Style.RESET_ALL);e.say(phrase);e.runAndWait()
 ```
