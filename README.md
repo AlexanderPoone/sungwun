@@ -46,4 +46,9 @@ if " " in lemma:
 sphinx_rtd_theme  
 ```sudo apt-get install python3.5 idle-python3.5 python3-pip python3-colorama python3-nltk python3-pygments python3-pyqt5.qtsvg python3-pyqt5.qtopengl python3-opengl python3-matplotlib python3-scipy python3-pil python3-roman python3-yaml python3-pandas python3-sklearn python3-sphinx python3-sphinx-rtd-theme python3-flask python3-pymongo python3-mistune r-base r-cran-plotrix r-cran-yaml r-cran-rcurl r-cran-stringr``` 
   
-```sudo pip3 install jupyter jupyter_qtconsole_colorschemes```
+```sudo pip3 install jupyter jupyter_qtconsole_colorschemes```  
+  
+```install.packages(c('pbdZMQ', 'devtools'))
+devtools::install_github('IRkernel/repr')
+devtools::install_github('IRkernel/IRkernel')
+IRkernel::installspec()```
