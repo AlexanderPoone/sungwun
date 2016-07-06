@@ -60,4 +60,4 @@ IRkernel::installspec()
 q()
 ```
 ```jupyter qtconsole --kernel=ir --style=solarizeddark```
-```demo("colors")
+```demo("colors")```
