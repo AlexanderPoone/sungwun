@@ -62,4 +62,10 @@ q()
 ```
 jupyter qtconsole --kernel=ir --style=solarizeddark
 demo('colors')
+library(plotrix)
+svg(file='chart.svg')
+cat('# # # Something')
+pie3D(c(1,2,3,4,5,6,7,8),labels=c('Alpha','Beta','Gamma','Delta','Epsilon','Zeta','Eta','Theta'),col=terrain.colors(8),main='Untitled',explode=0.1)
+dev.off()
+q()
 ```
