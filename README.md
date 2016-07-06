@@ -57,4 +57,5 @@ install.packages(c('pbdZMQ', 'devtools'))
 devtools::install_github('IRkernel/repr')
 devtools::install_github('IRkernel/IRkernel')
 IRkernel::installspec()
+q()
 ```
