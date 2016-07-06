@@ -59,5 +59,7 @@ devtools::install_github('IRkernel/IRkernel')
 IRkernel::installspec()
 q()
 ```
-```jupyter qtconsole --kernel=ir --style=solarizeddark```
-```demo("colors")```
+```
+jupyter qtconsole --kernel=ir --style=solarizeddark
+demo('colors')
+```
