@@ -49,8 +49,10 @@ sphinx_rtd_theme
 ```sudo pip3 install jupyter jupyter_qtconsole_colorschemes```  
   
 ```
-install.packages(c('pbdZMQ', 'devtools'))  
-devtools::install_github('IRkernel/repr')  
-devtools::install_github('IRkernel/IRkernel')  
+sudo R
+
+install.packages(c('pbdZMQ', 'devtools'))
+devtools::install_github('IRkernel/repr')
+devtools::install_github('IRkernel/IRkernel')
 IRkernel::installspec()
 ```
