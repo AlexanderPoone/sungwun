@@ -70,9 +70,9 @@ dev.off()
 q()
 ```
 This application uses geographically distributed replica sets, lorum ipsum dolor sit amet.  
-```But wait, there's more:```
-```
+But wait, there's more.  
 In case of emergency:
+```
 npm install bower js-yaml angular mongoose --save
 bower install semantic-ui angular-semantic-ui --save
 ```
