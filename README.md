@@ -69,3 +69,4 @@ pie3D(c(1,2,3,4,5,6,7,8),labels=c('Alpha','Beta','Gamma','Delta','Epsilon','Zeta
 dev.off()
 q()
 ```
+This application uses geographically distributed replica sets, lorum ipsum dolor sit amet.
