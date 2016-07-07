@@ -48,7 +48,7 @@ sphinx_rtd_theme
 
 ```# Instead of "sudo apt-get -y install libcurl4-gnutls-dev libssl-dev", we can use "sudo apt-get -y build-dep libcurl4-gnutls-dev" to install all dependencies of the R packages pbdZMQ and devtools.``` 
   
-```sudo pip3 install jupyter jupyter_qtconsole_colorschemes```  
+```sudo pip3 install jupyter jupyter_qtconsole_colorschemes ipywidgets```  
   
 ```
 sudo R
@@ -60,6 +60,7 @@ IRkernel::installspec()
 q()
 ```
 ```
+jupyter nbextension enable widgetsnbextension --py
 jupyter qtconsole --kernel=ir --style=solarizeddark
 demo('colors')
 library(plotrix)
