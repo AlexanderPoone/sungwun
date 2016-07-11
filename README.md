@@ -43,6 +43,7 @@ if " " in lemma:
 - {yale: Lorum Ipsum, yt: Lorum ipsum, en: Lorum ipsum, fr: Lorum ipsum, es: Lorum ipsum, ca: Lorum ipsum, example: [1, 2, 3], picture: !!binary R0lGODdhDQAIAIAAAAAAANnZ2SwAAAAADQAIAAACF4SDGQar3xxbJ9p0qa7R0YxwzaFME1IAADs=}
 - {yale: Lorum Ipsum, yt: Lorum ipsum, en: Lorum ipsum, fr: Lorum ipsum, es: Lorum ipsum, ca: Lorum ipsum, example: [1, 2, 3], picture: !!binary R0lGODdhDQAIAIAAAAAAANnZ2SwAAAAADQAIAAACF4SDGQar3xxbJ9p0qa7R0YxwzaFME1IAADs=}
 ```
+___
 sphinx_rtd_theme  
 ```sudo apt-get install python3.5 idle-python3.5 python3-pip python3-colorama python3-nltk python3-pygments python3-pyqt5.qtsvg python3-pyqt5.qtopengl python3-opengl python3-matplotlib python3-scipy python3-pil python3-roman python3-yaml python3-pandas python3-sklearn python3-sphinx python3-sphinx-rtd-theme python3-flask python3-pymongo python3-mistune r-base r-cran-plotrix r-cran-yaml r-cran-rcurl r-cran-stringr libcurl4-gnutls-dev libssl-dev```
 
@@ -77,3 +78,7 @@ In case of emergency:
 npm install bower js-yaml angular mongoose typescript --save
 bower install semantic-ui angular-semantic-ui --save
 ```
+## Changelog
+### [pre0] () (2000-01-01)
+**Added**
+- Links to Oxford Dict, Larousse, and Duden.
