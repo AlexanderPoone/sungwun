@@ -78,6 +78,16 @@ In case of emergency:
 npm install bower js-yaml angular mongoose typescript --save
 bower install semantic-ui angular-semantic-ui --save
 ```
+## Go instructions
+:wink:
+<pre>
+sudo apt-get install golang-lang git libtool pkg-config build-essential autoconf automake libzmq5 <strong>libzmq5-dev</strong> python3-zmq
+go get golang.org/x/tools/cmd/goimports
+go get -tags zmq_4_x github.com/gophergala2016/gophernotes
+sudo cp -r $GOPATH/src/github.com/gophergala2016/gophernotes/kernel/* ~/.local/share/jupyter/kernels/gophernotes
+sudo nano ~/.local/share/jupyter/kernels/gophernotes # change "/go/bin/gophernotes" to "<strong>{insert GOPATH here}</strong>/bin/gophernotes"
+sudo jupyter notebook # superuser is required unless you chmod 777 -R everything
+</pre>
 ## Changelog
 ### [pre0] () (2000-01-01)
 **Added**
