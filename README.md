@@ -78,6 +78,12 @@ In case of emergency:
 npm install bower js-yaml angular mongoose typescript --save
 bower install semantic-ui angular-semantic-ui --save
 ```
+## Don't close your laptop's lid!
+Use this instead:
+```
+from os import startfile
+startfile('C:\Windows\SysWOW64\scrnsave.scr')
+```
 ## Go instructions
 :wink:
 <pre>
