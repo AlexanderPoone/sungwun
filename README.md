@@ -84,6 +84,16 @@ Use this instead:
 from os import startfile
 startfile('C:\Windows\SysWOW64\scrnsave.scr')
 ```
+Sample build script:
+```
+import sys
+from cx_Freeze import setup, Executable
+base = "Win32GUI"				#Declare that we don't need a console window upon launch of the application.
+setup(name = "TakeANap",
+      version = "1.0",
+      description = "Turn off the screen",
+      executables = [Executable(r"{.py file location}", base=base, icon=r"{Icon location}")] )
+```
 ## Go instructions
 :wink:
 <pre>
