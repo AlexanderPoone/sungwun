@@ -110,4 +110,4 @@ sudo jupyter notebook # superuser is required unless you chmod 777 -R everything
 ### [pre0] () (2000-01-01)
 **Added**
 - Links to Oxford Dict, Merriam-Webster, Larousse, and Duden.
-[//]: <> (UNDECIDED: Furigana?)
+[//]: # (UNDECIDED: Furigana?)
