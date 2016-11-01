@@ -107,7 +107,7 @@ sudo nano ~/.local/share/jupyter/kernels/gophernotes # change "/go/bin/gophernot
 sudo jupyter notebook # superuser is required unless you chmod 777 -R everything
 </pre>
 ## Changelog
-### [pre0] () (2000-01-01)
+### [pre0] (La boucle infinie) (2000-01-01)
 **Added**
 - Links to Oxford Dict, Merriam-Webster, Larousse, and Duden.
 [//]: # (UNDECIDED: Furigana?)
