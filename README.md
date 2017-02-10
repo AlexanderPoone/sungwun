@@ -73,7 +73,7 @@ pie3D(c(1,2,3,4,5,6,7,8),labels=c('Alpha','Beta','Gamma','Delta','Epsilon','Zeta
 dev.off()
 q()
 ```
-The problem of startup application is, the application has to launch AFTER logging in. You have to gain access to the files through authentication, and wait for the configurations and profiles to load.
+The problem of startup application is, the application has to launch **after** logging in. You have to gain access to the files through authentication, and wait for the configurations and profiles to load.
 * Create a script file, e.g. `jupyter.sh`, in the `/etc/profile.d/` directory.
 * Add some latency for the configurations and profiles to load, e.g. `sleep 1m`.
 * Mark the shell script as executable: `sudo chmod +x /etc/profile.d/jupyter.sh`
