@@ -1,8 +1,54 @@
 # sungwun
 :construction: :construction: :construction:
 
-## Notes
+## CJK
+Get `Unihan.zip` from [ftp://ftp.unicode.org/Public/UNIDATA/Unihan.zip](). Extract `Unihan_DictionaryLikeData.txt`.
+The file has the following layout:
 ```
+U+9EA4\tkTotalStrokes\t33
+```
+```py3
+from os import remove
+from urllib.response import urlopen, URLError
+from zipfile import ZipFile
+trials = 0
+while trials < 10:
+    try:
+        res = urlopen("ftp://ftp.unicode.org/Public/UNIDATA/Unihan.zip", timeout = 10)
+        c = res.read()
+        f = open('tmp.zip','wb') # bytes
+        f.write(c)
+        f.close()
+        break
+    except URLError as e:
+        trials += 1
+        print type(e)
+if trials==10:
+    exit(1)
+zip=ZipFile('tmp.zip')
+zip.extract('Unihan_DictionaryLikeData.txt')
+zip.close()
+remove('tmp.zip')
+
+hex(ord(u"麤"))
+```
+`'0x9ea4'`
+
+```py3
+code=str(hex(ord(u"麤")))[2:].upper()
+```
+`'9EA4'`
+
+```py3
+from re import search
+file = open('Unihan_DictionaryLikeData.txt', 'r', encoding='utf8')  # Encoding is important, or else there'll be a UnicodeDecodeError. 
+everything = file.read()
+m = search('(?<=%s\tkTotalStrokes\t).*' % code, file) # ?<= means 'preceded by', ?= means 'succeeded by'
+print(m[0])
+```
+`33`
+## Main
+```py3
 # NOT using Jupyter
 >>> __author__= 'Alex Poon <alexander@cuhk.edu.hk>'
 >>> from os import system
@@ -30,7 +76,7 @@ if " " in lemma:
 #if isinstance(lemma, list):
 '''
 ```
-```
+```yaml
 # Shard 0
 ---
 - {yale: Lorum Ipsum, yt: Lorum ipsum, en: {en_gb: Lorum ipsum, en_us: Lorum ipsum}, fr: Lorum ipsum, es: {es_es: Lorum ipsum, es_ar: &B Lorum Ipsum; es_mx: *B}, ca: Lorum ipsum, example: [1, 2, 3], picture: !!binary R0lGODdhDQAIAIAAAAAAANnZ2SwAAAAADQAIAAACF4SDGQar3xxbJ9p0qa7R0YxwzaFME1IAADs=}
@@ -53,7 +99,7 @@ NOTE: Jupyter, like its predecessor, uses the `.ipynb` extension. The notebook f
   
 ```sudo pip3 install jupyter jupyter_qtconsole_colorschemes ipywidgets```  
   
-```
+```r
 sudo R
 
 install.packages(c('pbdZMQ', 'devtools'))
@@ -62,7 +108,7 @@ devtools::install_github('IRkernel/IRkernel')
 IRkernel::installspec()
 q()
 ```
-```
+```r
 jupyter nbextension enable widgetsnbextension --py
 jupyter qtconsole --kernel=ir --style=solarizeddark
 demo('colors')
@@ -81,13 +127,13 @@ The problem of startup application is, the application has to launch **after** l
 ___
 This application uses geographically distributed replica sets, lorum ipsum dolor sit amet.  
 But wait, there's more. In case of emergency:
-```
+```sh
 npm install bower js-yaml angular mongoose typescript --save
 bower install semantic-ui angular-semantic-ui --save
 ```
 ## Don't close your laptop's lid!
 Use this instead:
-```
+```py3
 from os import startfile
 startfile('C:\Windows\SysWOW64\scrnsave.scr')
 ```
